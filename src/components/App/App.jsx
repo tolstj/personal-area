@@ -6,13 +6,22 @@ import {
 } from 'react-router-dom';
 import Auth from './Auth/Auth';
 import Contacts from './Contacts/Contacts';
+import './App.css'
+import auth from '../../api/auth';
+
+// admin@mail.com password
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAuth: false,
+      isAuth: true,
     };
+  }
+
+  componentDidMount() {
+    auth('admin@mail.com', 'password')
+      .then(res => console.log(res.data));
   }
 
   render() {

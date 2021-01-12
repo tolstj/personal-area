@@ -1,0 +1,65 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  font-size: 14px;
+}
+
+.field {
+  width: 266px;
+  margin-top: -32px;
+}
+
+.field input {
+  box-sizing: border-box;
+  width: 266px;
+  height: 35px;
+  padding: 0 10px;
+  background: #C8A9FF;
+  border: 2px solid #202020;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
+.field input[name="name"] {
+  text-align: start;
+}
+
+.field input[name="tel"] {
+  text-align: center;
+}
+
+.contact .name, .contact .tel {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 266px;
+  height: 35px;
+}
+
+.contact .tel {
+  justify-content: center;
+}
+
+.button {
+  width: 35px;
+  height: 35px;
+  background: #202020;
+  border: none;
+  color: #AE98D3;
+  cursor: pointer;
+}
+
+.removeHeader {
+  width: 30%;
+}
+
+.buttonAgree, .buttonRefuse {
+  width: 30%;
+  height: 35px;
+  background: #202020;
+  border: none;
+  color: #AE98D3;
+  cursor: pointer;
+}

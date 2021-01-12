@@ -1,0 +1,19 @@
+.button {
+  width: 35px;
+  height: 35px;
+  background: #202020;
+  border: none;
+  color: #AE98D3;
+  cursor: pointer;
+}
+
+.Contacts {
+  height: 3000px;
+  padding: 43px 0;
+  background: #AE98D3;
+}
+
+.Contacts .wrapper {
+  width: 700px;
+  margin: 0 auto;
+}

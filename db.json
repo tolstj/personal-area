@@ -1,12 +1,9 @@
 {
   "users": [
     {
-      "email": "test@mail.com",
-      "password": "testPassword"
-    },
-    {
-      "email": "test2@mail.com",
-      "password": "testPassword2"
+      "email": "admin@mail.com",
+      "password": "$2a$10$PbNdcZ8NGuMzUhNx/QXo1e95gLiNON1ttwPOOB62flVxulkDDkB8i",
+      "id": 1
     }
   ]
 }

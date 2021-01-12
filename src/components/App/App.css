@@ -12,3 +12,23 @@ h1 {
   font-size: 24px;
   font-weight: normal;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}

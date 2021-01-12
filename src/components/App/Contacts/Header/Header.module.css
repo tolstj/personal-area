@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  height: 130px;
+  background: #AE98D3;
+}
+
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logout {
+  text-decoration: none;
+  color: inherit;
+}

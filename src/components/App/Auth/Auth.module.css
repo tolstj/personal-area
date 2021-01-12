@@ -22,13 +22,6 @@
   width: 272px;
 }
 
-.label {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 2px;
-  font-size: 14px;
-}
-
 .input {
   box-sizing: border-box;
   width: 100%;
