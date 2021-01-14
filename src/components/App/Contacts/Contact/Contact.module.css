@@ -63,3 +63,9 @@
   color: #AE98D3;
   cursor: pointer;
 }
+
+@media (max-width: 730px) {
+  .field input {
+    width: 100%;
+  }
+}

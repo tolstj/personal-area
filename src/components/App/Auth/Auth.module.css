@@ -18,6 +18,10 @@
   text-align: center;
 }
 
+.errMsg {
+  color: rgb(192, 41, 41);
+}
+
 .form {
   width: 272px;
 }

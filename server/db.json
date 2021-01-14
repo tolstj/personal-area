@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$PbNdcZ8NGuMzUhNx/QXo1e95gLiNON1ttwPOOB62flVxulkDDkB8i",
+      "id": 1
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Мама",
+      "tel": "89037589940",
+      "id": 3
+    },
+    {
+      "name": "Вадим Молоко",
+      "tel": "89660441130",
+      "id": 5
+    },
+    {
+      "name": "Володя",
+      "tel": "89035446690",
+      "id": 7
+    },
+    {
+      "name": "Queen",
+      "tel": "89649991426",
+      "id": 8
+    },
+    {
+      "name": "Оля Работа",
+      "tel": "89620014722",
+      "id": 9
+    }
+  ],
+  "isAuth": {
+    "isAuth": true
+  }
+}

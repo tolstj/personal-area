@@ -13,16 +13,10 @@ class Contact extends React.Component {
       },
       removeMode: false,
     };
-    this.enableEditMode = this.enableEditMode.bind(this);
-    this.disableEditMode = this.disableEditMode.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.enableRemoveMode = this.enableRemoveMode.bind(this);
-    this.disableRemoveMode = this.disableRemoveMode.bind(this);
-    this.removeContact = this.removeContact.bind(this);
   }
 
-  enableEditMode(fieldType) {
-    this.setState(state => ({
+  enableEditMode = (fieldType) => {
+    this.setState((state) => ({
       editMode: {
         ...state.editMode,
         [fieldType]: true,
@@ -30,32 +24,31 @@ class Contact extends React.Component {
     }));
   }
 
-  disableEditMode(fieldType) {
-    this.setState(state => ({
+  disableEditMode = (fieldType) => {
+    this.setState((state) => ({
       editMode: {
         ...state.editMode,
         [fieldType]: false,
       },
     }));
-    // Update fields in api will be here
+    this.props.changeContactField(this.props.contact.id, {
+      name: this.state.name,
+      tel: this.state.tel,
+    });
   }
 
-  handleChange(e, fieldType) {
+  handleChange = (e, fieldType) => {
     this.setState({
       [fieldType]: e.target.value,
     });
   }
 
-  enableRemoveMode() {
+  enableRemoveMode = () => {
     this.setState({ removeMode: true });
   }
 
-  disableRemoveMode() {
+  disableRemoveMode = () => {
     this.setState({ removeMode: false });
-  }
-
-  removeContact() {
-    // Remove contact from api will be here
   }
 
   render() {
@@ -70,7 +63,7 @@ class Contact extends React.Component {
           </span>
           <button
             className={styles.buttonAgree}
-            onClick={this.removeContact}
+            onClick={() => this.props.removeContact(this.props.contact.id)}
           >
             Да
           </button>
@@ -112,6 +105,7 @@ class Contact extends React.Component {
                 onBlur={() => this.disableEditMode('name')}
                 onChange={(e) => this.handleChange(e, 'name')}
                 value={this.state.name}
+                maxLength="26"
               />
             </div>
           }
@@ -139,6 +133,7 @@ class Contact extends React.Component {
                 onBlur={() => this.disableEditMode('tel')}
                 onChange={(e) => this.handleChange(e, 'tel')}
                 value={this.state.tel}
+                maxLength="16"
               />
             </div>
           }

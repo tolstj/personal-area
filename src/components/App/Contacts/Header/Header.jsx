@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 class Header extends React.Component {
-
   render() {
     return (
       <header className={styles.header}>
@@ -12,8 +11,9 @@ class Header extends React.Component {
           <Link
             to="/"
             className={styles.logout}
+            onClick={this.props.logout}
           >
-            Выйти из {this.props.email}
+            Выйти
           </Link>
         </div>
       </header>

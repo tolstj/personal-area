@@ -17,3 +17,9 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 730px) {
+  .header .wrapper {
+    width: calc(100% - 30px);
+  }
+}

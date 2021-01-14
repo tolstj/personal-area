@@ -39,3 +39,22 @@
   background: #C8A9FF;
   border: 2px solid #202020;
 }
+
+@media (max-width: 730px) {
+  .toolbar .wrapper {
+    width: calc(100% - 30px);
+  }
+
+  .shortInfo {
+    display: none;
+  }
+
+  .search {
+    width: 70%;
+  }
+
+  .input[type="search"] {
+    width: calc(100% - 35px);
+  }
+
+}
